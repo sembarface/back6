@@ -52,7 +52,7 @@ try {
     // Удаление записи
     if ($action === 'delete' && $id) {
         $pdo->prepare("DELETE FROM applications WHERE id = ?")->execute([$id]);
-        header("Location: admin.php");
+        header("Location: index.php");
         exit();
     }
     
@@ -85,7 +85,7 @@ try {
             $lang_stmt->execute([$_POST['id'], $lang]);
         }
         
-        header("Location: admin.php");
+        header("Location: index.php");
         exit();
     }
 } catch (PDOException $e) {
