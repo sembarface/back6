@@ -225,7 +225,7 @@ if ($action === 'edit' && $id) {
                         </div>
                         
                         <button type="submit" class="btn btn-primary">Сохранить</button>
-                        <a href="admin.php" class="btn btn-secondary">Отмена</a>
+                        <a href="index.php" class="btn btn-secondary">Отмена</a>
                     </form>
                 </div>
             </div>
@@ -253,8 +253,8 @@ if ($action === 'edit' && $id) {
                         <td><?= htmlspecialchars($app['phone']) ?></td>
                         <td><?= htmlspecialchars($app['languages']) ?></td>
                         <td>
-                            <a href="admin.php?action=edit&id=<?= $app['id'] ?>" class="btn btn-sm btn-warning">Редактировать</a>
-                            <a href="admin.php?action=delete&id=<?= $app['id'] ?>" class="btn btn-sm btn-danger" 
+                            <a href="index.php?action=edit&id=<?= $app['id'] ?>" class="btn btn-sm btn-warning">Редактировать</a>
+                            <a href="index.php?action=delete&id=<?= $app['id'] ?>" class="btn btn-sm btn-danger" 
                                onclick="return confirm('Вы уверены?')">Удалить</a>
                         </td>
                     </tr>
